@@ -1,0 +1,25 @@
+{
+  "name": "brella-bot",
+  "version": "1.0.0",
+  "description": "Mastodon Brella Bot ☂️",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "NorthWestWind",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@types/node": "^18.0.6",
+    "cron": "^2.3.1",
+    "dotenv": "^16.3.1",
+    "megalodon": "^6.1.1",
+    "node-fetch": "^3.2.6"
+  },
+  "devDependencies": {
+    "@types/cron": "^2.0.1",
+    "typescript": "^5.1.6"
+  }
+}
