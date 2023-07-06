@@ -46,6 +46,8 @@ function generateToot() {
 			else toot += "D";
 		}
 	}
+
+	return toot;
 }
 
 function nextInt(length = 2) {
