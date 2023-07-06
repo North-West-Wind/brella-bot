@@ -5,7 +5,7 @@ import { Mastodon } from 'megalodon';
 const BASE_URL = 'https://wetdry.world';
 const client = new Mastodon(BASE_URL, process.env.TOKEN);
 
-const job = new CronJob("* * */2 * * *", () => client.postStatus(generateToot(), {}).catch(console.error), null, true);
+const job = new CronJob("0 0 */2 * * *", () => client.postStatus(generateToot(), {}).catch(console.error), null, true);
 
 function generateToot() {
 	var toot = '☂️';
